@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<title>LAB 04</title>
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="css/style.css" rel="stylesheet">
+<link href="data:image/x-icon;," rel="shortcut icon" type="image/x-icon">
+<script src="js/app.js"></script>
+<body background="/cargarImagen?img=goku">
+
+<div class="w3-container">
+    <h2 class="headertext">LAB04 - AREP</h2>
+
+    <!-- Para Ingresar Datos -->
+    <div class="w3-modal" id="id01">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+            <form class="w3-container">
+                <div class="w3-section">
+                    <label><b>Usuarios</b></label>
+                    <div class="vertical-center">
+                        <input class="w3-input w3-border w3-margin-bottom" id="name" name="name"
+                               placeholder="Andres Calderon" type="text">
+                        <button class="w3-button w3-green w3-large" form="name" onclick="app.insertUsuario()">Enviar
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+                <button class="w3-button w3-red" onclick="document.getElementById('id01').style.display='none'"
+                        type="button">Cancelar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botones -->
+    <main>
+        <div class="bottonBox item-a">
+            <button class="w3-button w3-green w3-large boxRight"
+                    onclick="document.getElementById('id01').style.display='block'">Ingresar Datos
+            </button>
+            <button class="w3-button w3-green w3-large boxRight"
+                    onclick="window.location.href='/cargarImagen?img=homero'">Ver Imagen
+            </button>
+            <button class="w3-button w3-green w3-large boxRight" onclick="window.location.href='/js/app.js'">Ver
+                JavaScript
+            </button>
+            <button class="w3-button w3-green w3-large boxRight" onclick="window.location.href='/css/style.css'">Ver
+                CSS
+            </button>
+        </div>
+        <div class="userBox item-b">
+            <button class="w3-button w3-green w3-large userBox" onclick="app.getUsuarios()">Ver Usuarios</button>
+            <div class="textBox" id="usuarios">
+
+            </div>
+        </div>
+    </main>
+
+
+</div>
+
+</body>
+</html>
