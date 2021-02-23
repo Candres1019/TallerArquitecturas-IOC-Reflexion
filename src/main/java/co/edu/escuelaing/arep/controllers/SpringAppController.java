@@ -18,6 +18,14 @@ public class SpringAppController {
     private static final ArrayList<String> listaDeUsuarios = new ArrayList<>();
 
     /**
+     *
+     */
+    @RequestMapping(value = "/")
+    public static void noPath(){
+        getIndex();
+    }
+
+    /**
      * Metodo para solicitar el index de la aplicacion
      */
     @RequestMapping(value = "/index")
