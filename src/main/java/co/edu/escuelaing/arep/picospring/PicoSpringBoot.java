@@ -95,8 +95,8 @@ public class PicoSpringBoot implements Processor {
      * Método para manejar las peticiones.
      *
      * @param path - link path.
-     * @param req  -
-     * @param resp -
+     * @param req  - req
+     * @param res  - res
      * @return - Cadena html dependiendo del tipo.
      */
     @Override

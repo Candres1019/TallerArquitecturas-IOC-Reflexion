@@ -15,6 +15,11 @@ public class HttpServer {
     private final Map<String, Processor> routesToProcesssors = new HashMap();
     private int port;
 
+    /**
+     * Metodo para obtener el clientSocket
+     *
+     * @return - Objeto de tipo Socket.
+     */
     public static Socket getClientSocket() {
         return clientSocket;
     }

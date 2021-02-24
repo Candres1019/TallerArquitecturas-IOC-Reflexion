@@ -1,9 +1,9 @@
 # Taller de Arquitecturas de Servidores de Aplicaciones, Meta Protocolos de Objetos, Patron IOC y Reflexión
 
-Aplicativo Web diseñado en Java con el objetivo de crear un servidor HTTP, y un framework que reemplace
-al framework Spark, este servidor soporta peticiones get por medio de funciones lambda, para esta aplicación el servidor 
-devuelve archivos estáticos para ser visualizados por el usuario, estos archivos son almacenados internamente en el directorio 
-/src/main/resources
+Aplicativo Web diseñado en Java con el objetivo de crear un servidor HTTP, y un framework que simule algunas de las funciones
+del framework Spring, este servidor acepta peticiones get que son mapeadas haciendo uso de anotaciones en los metodos y 
+luego estos son creados mediante reflexión y patrones IOC, para esta aplicación el servidor devuelve archivos estáticos 
+para ser visualizados por el usuario, estos archivos son almacenados internamente en el directorio /src/main/resources
 
 ## Información Del Proyecto
 
@@ -24,13 +24,13 @@ Adicionalmente se recomienda tener descargado los siguientes programas:
 > * [Como Instalar HerokuCli](https://devcenter.heroku.com/articles/heroku-cli#download-and-install)
 
 ### Despliegue en Heroku
-[![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](https://afternoon-lake-64620.herokuapp.com/Apps/htmlShow)
+[![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](https://sheltered-chamber-61546.herokuapp.com)
 
 ### Calidad del código
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/e0c309d228444068b746127db6a10c62)](https://www.codacy.com/gh/Candres1019/TallerClientesServicios/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Candres1019/TallerClientesServicios&amp;utm_campaign=Badge_Grade)
 
 ### Integración Continua
-[![CircleCI](https://circleci.com/gh/Candres1019/TallerClientesServicios.svg?style=svg)](https://app.circleci.com/pipelines/github/Candres1019/TallerClientesServicios)
+[![CircleCI](https://circleci.com/gh/Candres1019/TallerArquitecturas-IOC-Reflexion.svg?style=svg)](https://app.circleci.com/pipelines/github/Candres1019/TallerArquitecturas-IOC-Reflexion)
 
 ### Instalación
 
@@ -39,10 +39,10 @@ Adicionalmente se recomienda tener descargado los siguientes programas:
     * Para **Clonar** el proyecto utilice el siguiente comando en la ventana de comandos:
   
    ```
-   git clone https://github.com/Candres1019/TallerClientesyServicios---AREP.git
+   git clone https://github.com/Candres1019/TallerArquitecturas-IOC-Reflexion.git
    ```
    
-    * Para **Descargar** el proyecto de click [aquí](https://github.com/Candres1019/TallerClientesServicios-AREP/archive/master.zip),
+    * Para **Descargar** el proyecto de click [aquí](https://github.com/Candres1019/TallerArquitecturas-IOC-Reflexion/archive/master.zip),
       la descarga comenzara de manera automática.
       
 2. En una ventana de comandos ejecute el siguiente comando, dentro de la carpeta principal del proyecto:
@@ -53,20 +53,15 @@ Adicionalmente se recomienda tener descargado los siguientes programas:
 
 3. Para ejecutar la aplicación de manera local utilizamos en la ventana de comandos el siguiente comando:
    
-    > * Distribuciones Linux y MacOs:
     > ```
-    > java $JAVA_OPTS -cp target/classes:target/dependency/* co.edu.escuelaing.demoruntime.DemoRunTime
-    > ```
-    > * Distribuciones Windows:
-    > ```
-    > java -cp target/classes;target/dependency/* co.edu.escuelaing.demoruntime.DemoRunTime
+    > java -cp "target/classes" co.edu.escuelaing.arep.picospring.PicoSpringBoot co.edu.escuelaing.arep.controllers.SpringAppController
     > ```
     
 4. Para ver el aplicativo web de manera local ingresamos al siguiente enlace, dentro de este enlace encontrará los botones 
    para realizar las acciones específicas (ver imagen, ver js, ver css, ver datos, insertar datos):
    
     > ```
-    > http://localhost:3478/Apps/htmlShow
+    > http://localhost:8080/
     > ```
 
 5. Por defecto se creó la documentación JavaDoc y fue dejada en el directorio /Javadoc, si desea generar uno nuevo
@@ -84,7 +79,7 @@ En una ventana de comandos, utilice el siguiente comando:
 
 ## Construido Con
 
-* [Java 8](https://www.java.com/es/) - Lenguaje de Programación.
+* [Java 11](https://www.java.com/es/) - Lenguaje de Programación.
 * [JUnit](https://junit.org/junit5/) - Pruebas de Unidad.
 * [Maven](https://maven.apache.org/) - Manejo de dependecias.
 * [IntelliJ IDEA](https://www.jetbrains.com/es-es/idea/) - Entorno de Desarrollo.
@@ -94,4 +89,4 @@ En una ventana de comandos, utilice el siguiente comando:
 * **Andres Mateo Calderón Ortega** - [Candres1019](https://github.com/Candres1019)
 
 # Licencia
-Este proyecto está licenciado bajo la GNU v3.0 - ver el archivo [LICENSE.md](https://github.com/Candres1019/TallerClientesServicios-AREP/blob/master/LICENSE) para más detalles
+Este proyecto está licenciado bajo la GNU v3.0 - ver el archivo [LICENSE](./LICENSE) para más detalles

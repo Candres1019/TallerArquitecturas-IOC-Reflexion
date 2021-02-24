@@ -5,6 +5,9 @@ import java.awt.image.BufferedImage;
 import java.io.*;
 import java.net.Socket;
 
+/**
+ * Clase encargada de leer los archivos estaticos del servidor.
+ */
 public class DocumentReader {
 
     private static final DocumentReader _instance = new DocumentReader();
@@ -18,10 +21,18 @@ public class DocumentReader {
     private static final String contentJs = "Content-Type: text/javascript";
     private static final String contentHtml = "Content-Type: text/html";
 
+    /**
+     * Constructor de la clase DocumentReader.
+     */
     private DocumentReader() {
         // Constructor vacio a proposito
     }
 
+    /**
+     * Metodo para obtener la instancia de la clase DocumentReader.
+     *
+     * @return - Instancia de la clase DocumentReader.
+     */
     public static DocumentReader getInstance() {
         return _instance;
     }
@@ -29,6 +40,7 @@ public class DocumentReader {
     /**
      * Metodo para leer archivos de tipo imagen.
      *
+     * @param imageName    - nombre de la imagen ha abrir.
      * @param clientSocket - clientSocket.
      */
     public static void imageReader(Socket clientSocket, String imageName) {
