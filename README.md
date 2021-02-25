@@ -8,7 +8,7 @@ para ser visualizados por el usuario, estos archivos son almacenados internament
 ## Información Del Proyecto
 
 * La documentación del las clases y los metodos del proyecto se encuentran en el directorio adjunto /Javadoc/apidocs.
-* Haga click [aqui](./TallerClientesServicios.pdf) para ver el reporte del proyecto.
+* Haga click [aqui](./TallerArquitecturas_IOC_Reflexion.pdf) para ver el reporte del proyecto.
 
 ### Pre-Requisitos
 
