@@ -91,6 +91,16 @@ public class SpringAppController {
     }
 
     /**
+     * Metodo para ignorar la peticion de favicon.cio
+     *
+     * @return - una respuesta http valida.
+     */
+    @RequestMapping(value = "/favicon.ico")
+    public static String ignoreFavicon() {
+        return validOkHttpHeader();
+    }
+
+    /**
      * Encabezado http valido
      *
      * @return - Encabezado http valido.

@@ -34,18 +34,22 @@ public class ParamsHandler {
      * @return - HasMap con los parametros y sus valores.
      */
     public HashMap<String, String> getParams(String path) {
-        System.out.println(path);
-        HashMap<String, String> paramsMap = new HashMap<String, String>();
-        String[] params = path.substring(path.indexOf('?') + 1).split("&");
-        for (String s : params) {
-            System.out.println(s);
-            String[] tempParam = s.split("=");
-            paramsMap.put(tempParam[0], tempParam[1]);
-        }
-        if (paramsMap.size() == 0) {
+        try {
+            System.out.println(path);
+            HashMap<String, String> paramsMap = new HashMap<String, String>();
+            String[] params = path.substring(path.indexOf('?') + 1).split("&");
+            for (String s : params) {
+                System.out.println(s);
+                String[] tempParam = s.split("=");
+                paramsMap.put(tempParam[0], tempParam[1]);
+            }
+            if (paramsMap.size() == 0) {
+                return null;
+            }
+            return paramsMap;
+        } catch (Exception e) {
             return null;
         }
-        return paramsMap;
     }
 
 }
