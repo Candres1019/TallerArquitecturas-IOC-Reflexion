@@ -27,7 +27,7 @@ Adicionalmente se recomienda tener descargado los siguientes programas:
 [![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](https://sheltered-chamber-61546.herokuapp.com)
 
 ### Calidad del código
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/e0c309d228444068b746127db6a10c62)](https://www.codacy.com/gh/Candres1019/TallerClientesServicios/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Candres1019/TallerClientesServicios&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/058dd8675e1d4fd2b6e393e492e6b4e0)](https://www.codacy.com/gh/Candres1019/TallerArquitecturas-IOC-Reflexion/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Candres1019/TallerArquitecturas-IOC-Reflexion&amp;utm_campaign=Badge_Grade)
 
 ### Integración Continua
 [![CircleCI](https://circleci.com/gh/Candres1019/TallerArquitecturas-IOC-Reflexion.svg?style=svg)](https://app.circleci.com/pipelines/github/Candres1019/TallerArquitecturas-IOC-Reflexion)
