@@ -24,6 +24,7 @@ Adicionalmente se recomienda tener descargado los siguientes programas:
 > * [Como Instalar HerokuCli](https://devcenter.heroku.com/articles/heroku-cli#download-and-install)
 
 ### Despliegue en Heroku
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c7ad15d0311b4ee598b45abe75f578c6)](https://app.codacy.com/gh/Candres1019/TallerArquitecturas-IOC-Reflexion?utm_source=github.com&utm_medium=referral&utm_content=Candres1019/TallerArquitecturas-IOC-Reflexion&utm_campaign=Badge_Grade_Settings)
 [![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](https://sheltered-chamber-61546.herokuapp.com)
 
 ### Calidad del código
